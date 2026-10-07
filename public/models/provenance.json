@@ -1,0 +1,88 @@
+{
+  "entry": "1TRZ",
+  "assembly": 3,
+  "source": "https://files.rcsb.org/download/1TRZ.pdb3",
+  "chainMap": {
+    "A": {
+      "sourceModel": 1,
+      "sourceChain": "A",
+      "role": "A"
+    },
+    "B": {
+      "sourceModel": 1,
+      "sourceChain": "B",
+      "role": "B"
+    },
+    "C": {
+      "sourceModel": 1,
+      "sourceChain": "C",
+      "role": "A"
+    },
+    "D": {
+      "sourceModel": 1,
+      "sourceChain": "D",
+      "role": "B"
+    },
+    "E": {
+      "sourceModel": 2,
+      "sourceChain": "A",
+      "role": "A"
+    },
+    "F": {
+      "sourceModel": 2,
+      "sourceChain": "B",
+      "role": "B"
+    },
+    "G": {
+      "sourceModel": 2,
+      "sourceChain": "C",
+      "role": "A"
+    },
+    "H": {
+      "sourceModel": 2,
+      "sourceChain": "D",
+      "role": "B"
+    },
+    "I": {
+      "sourceModel": 3,
+      "sourceChain": "A",
+      "role": "A"
+    },
+    "J": {
+      "sourceModel": 3,
+      "sourceChain": "B",
+      "role": "B"
+    },
+    "K": {
+      "sourceModel": 3,
+      "sourceChain": "C",
+      "role": "A"
+    },
+    "L": {
+      "sourceModel": 3,
+      "sourceChain": "D",
+      "role": "B"
+    }
+  },
+  "zincUniquePositions": [
+    [
+      0.0,
+      0.0,
+      -7.816
+    ],
+    [
+      0.0,
+      0.0,
+      8.212
+    ]
+  ],
+  "note": "Coincident symmetry copies of zinc consolidated for display; original occupancy retained. Waters, chloride, sodium and alternate conformers omitted from display only. Originals preserved.",
+  "sha256": {
+    "1TRZ-assembly3.cif": "00f62a269e15798f1f17c178f929484f9cd7df80eafb025785b6dbb13b4b0411",
+    "1TRZ-assembly3.pdb": "990d4f8fbb0ca7fb717a3cd933ea804db00e20f2b3d09236a1876011cc8e0f70",
+    "1TRZ.pdb": "cac675a9117f65874c7136b105eec2f8b41394f3308bf59be39ee4285e09c78b",
+    "insulin-dimer.pdb": "cd83f91eea625879a7d321bf2d8b4a206fd5f9dd25adcb7865e5456a19a3c7be",
+    "insulin-hexamer.pdb": "fabc65a30d37bb8d8b94b802ae0ac55ba2f22d3163c053db3464cb3435fa1198",
+    "insulin-monomer.pdb": "1b900aac73ac27306e050247b2deaac0e744f1fdf25e2bb7b4579e67596c1b1b"
+  }
+}

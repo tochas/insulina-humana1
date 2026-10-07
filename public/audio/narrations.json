@@ -1,0 +1,70 @@
+{
+  "intro": {
+    "file": "/audio/intro.mp3",
+    "text": "Bienvenido al Museo Interactivo de Proteínas. La insulina humana es una hormona de cincuenta y un aminoácidos. Su estructura permite reconocer un receptor y regular el metabolismo de la glucosa. Toma el control y explora."
+  },
+  "chains": {
+    "file": "/audio/chains.mp3",
+    "text": "Dos cadenas forman una unidad de insulina madura. La cadena A contiene veintiún aminoácidos. La cadena B contiene treinta. Selecciona un aminoácido para encontrar su posición en el modelo tridimensional."
+  },
+  "bridges": {
+    "file": "/audio/bridges.mp3",
+    "text": "Seis cisteínas participan en tres puentes disulfuro. A seis con A once. A siete con B siete. Y A veinte con B diecinueve. Estos enlaces estabilizan la forma. Nuestro reto es de identificación estructural; no simula la biosíntesis."
+  },
+  "organization": {
+    "file": "/audio/organization.mp3",
+    "text": "Un monómero es una unidad de insulina formada por A más B. Seis unidades pueden asociarse en un hexámero con zinc. El hexámero favorece el almacenamiento. El monómero es la forma que reconoce al receptor."
+  },
+  "application": {
+    "file": "/audio/application.mp3",
+    "text": "La pluma de insulina humana regular administra una formulación al tejido subcutáneo. Después, la dilución favorece la disociación de estructuras asociadas. La insulina disponible alcanza tejidos, reconoce su receptor e inicia señales celulares. La ingeniería conecta estabilidad molecular y precisión del dispositivo."
+  },
+  "complete": {
+    "file": "/audio/complete.mp3",
+    "text": "¡Insulina ensamblada! Los tres puentes disulfuro estabilizan su estructura madura."
+  },
+  "tour-0": {
+    "text": "Explora la insulina humana: una señal pequeña con un gran efecto.",
+    "file": "/audio/tour-0.mp3"
+  },
+  "tour-1": {
+    "text": "Este modelo procede de coordenadas experimentales de Protein Data Bank.",
+    "file": "/audio/tour-1.mp3"
+  },
+  "tour-2": {
+    "text": "Veintiún aminoácidos en A y treinta en B forman la insulina madura.",
+    "file": "/audio/tour-2.mp3"
+  },
+  "tour-3": {
+    "text": "Selecciona una posición: el mismo residuo aparece en el modelo tridimensional.",
+    "file": "/audio/tour-3.mp3"
+  },
+  "tour-4": {
+    "text": "Tres puentes disulfuro estabilizan la estructura. Dos unen A con B.",
+    "file": "/audio/tour-4.mp3"
+  },
+  "tour-5": {
+    "text": "Un monómero es una unidad A más B. Reconoce al receptor.",
+    "file": "/audio/tour-5.mp3"
+  },
+  "tour-6": {
+    "text": "Seis unidades se asocian en un hexámero que favorece el almacenamiento.",
+    "file": "/audio/tour-6.mp3"
+  },
+  "tour-7": {
+    "text": "Dos iones de zinc coordinan histidinas de moléculas vecinas.",
+    "file": "/audio/tour-7.mp3"
+  },
+  "tour-8": {
+    "text": "La insulina reconoce al receptor. No tiene un sitio activo catalítico.",
+    "file": "/audio/tour-8.mp3"
+  },
+  "tour-9": {
+    "text": "Una pluma administra insulina. Su asociación influye en la disponibilidad posterior.",
+    "file": "/audio/tour-9.mp3"
+  },
+  "tour-10": {
+    "text": "Toma el control y explora. Encuentra residuos y completa los retos.",
+    "file": "/audio/tour-10.mp3"
+  }
+}

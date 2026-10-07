@@ -1,0 +1,30 @@
+const BASE=process.env.MUSEUM_URL||'http://localhost:4173';
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/vicga/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');let browser;
+(async()=>{
+ const checks=[],errors=[];const ok=(name,v=true)=>{assert(v,name);checks.push(name);console.log('PASS',name)};
+ const catalog=JSON.parse(fs.readFileSync('public/audio/narrations.json','utf8'));
+ const report=JSON.parse(fs.readFileSync('public/audio/audio-report.json','utf8'));
+ for(const id of Object.keys(catalog)){const bytes=fs.readFileSync('dist/audio/'+id+'.mp3');assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),report[id].sha256)}
+ ok('Los 17 MP3 de producción conservan los hashes de los archivos recibidos');
+ ok('No quedan WAV de Windows en producción',!fs.readdirSync('dist/audio').some(f=>f.endsWith('.wav')));
+ browser=await chromium.launch({channel:'msedge',headless:true});const context=await browser.newContext({viewport:{width:1366,height:768}});
+ await context.addInitScript(()=>{const OriginalAudio=window.Audio;window.__audioEvents=[];window.Audio=function(...args){const a=new OriginalAudio(...args);window.__testAudio=a;for(const event of ['playing','ended','error'])a.addEventListener(event,()=>window.__audioEvents.push({event,src:a.currentSrc,time:a.currentTime,duration:a.duration}));return a;};});
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(BASE);await page.waitForFunction(()=>window.__museum?.molecule.model&&navigator.serviceWorker.controller&&document.querySelector('#loading').hidden);
+ await context.setOffline(true);await page.reload();await page.waitForFunction(()=>window.__museum?.molecule.model&&document.querySelector('#loading').hidden);
+ const clips=await page.evaluate(async()=>{const catalog=await(await fetch('/audio/narrations.json')).json(),out=[];for(const [id,item] of Object.entries(catalog)){const r=await fetch(item.file);if(!r.ok)throw Error(id);const buf=await r.arrayBuffer();const ac=new AudioContext();const decoded=await ac.decodeAudioData(buf);await ac.close();const cues=await(await fetch('/audio/'+id+'.json')).json();out.push({id,duration:decoded.duration,mime:r.headers.get('content-type'),cueEnd:cues.at(-1).end,text:cues.map(c=>c.text).join(' ')===item.text});}return out;});
+ ok('Los 17 MP3 se decodifican desde caché sin internet',clips.length===17&&clips.every(c=>c.duration>0&&c.mime==='audio/mpeg'));
+ ok('Subtítulos completos con fin ajustado a la duración real',clips.every(c=>c.text&&Math.abs(c.cueEnd-c.duration)<.02));
+ ok('Cada frase automática cabe en su ventana de siete segundos',clips.filter(c=>c.id.startsWith('tour-')).every(c=>c.duration<6.2));
+ await page.locator('.large[data-action="start"]').click();await page.locator('[data-action="sound"]').click();await page.waitForFunction(()=>!window.__testAudio.paused&&window.__testAudio.currentTime>.1);
+ await page.locator('[data-station="8"]').click();await page.waitForFunction(()=>window.__testAudio.currentSrc.endsWith('/application.mp3')&&!window.__testAudio.paused);await page.waitForTimeout(22000);
+ ok('La narración de tratamiento termina sin que la interrumpa el modo museo',await page.evaluate(()=>window.__testAudio.ended&&window.__museum.clock.start===null));
+ await page.locator('[data-action="settings"]').click();await page.locator('[data-action="tour"]').click();await page.waitForTimeout(78500);
+ const events=await page.evaluate(()=>window.__audioEvents);
+ const ended=new Set(events.filter(e=>e.event==='ended'&&e.src.includes('/tour-')).map(e=>e.src.split('/').at(-1)));
+ ok('Las once narraciones del recorrido terminan completas offline',ended.size===11);
+ ok('No se producen errores de reproducción',events.every(e=>e.event!=='error')&&errors.length===0);
+ await page.locator('[data-action="sound"]').click();ok('Silencio detiene reproducción',await page.evaluate(()=>window.__testAudio.paused));
+ fs.writeFileSync('evidence/audio-update/playback-report.json',JSON.stringify({date:new Date().toISOString(),checks:checks.length,passed:checks,offline:true,clips,events,errors},null,2));await browser.close();
+})().catch(async e=>{console.error(e);if(browser)await browser.close();process.exit(1)});

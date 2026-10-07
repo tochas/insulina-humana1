@@ -1,0 +1,189 @@
+{
+  "intro": {
+    "seconds": 14.837541666666667,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.7852877974510193,
+    "rms": 0.1686885665165282,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "intro.mp3.mp3",
+    "sha256": "65d18c6c6de9effb76f41d687ea0b2498ca858da8f656029ed3712e602240217",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "chains": {
+    "seconds": 15.072645833333333,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8842326402664185,
+    "rms": 0.16148864739455418,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "chains.mp3.mp3",
+    "sha256": "bca17526d9c5a0f71df8ada6a73dc5c61ec6bff7f6be2c36bef26e3685eb8049",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "bridges": {
+    "seconds": 18.599166666666665,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8439525365829468,
+    "rms": 0.14265944081299134,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "bridges.mp3.mp3",
+    "sha256": "4b0c94b932a982af40a21b852dcfa2e220c14d700bd669b933b7b5743d94a464",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "organization": {
+    "seconds": 15.647333333333334,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8519449234008789,
+    "rms": 0.15423926654843667,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "organization.mp3.mp3",
+    "sha256": "0785c2fd11525319a0667f3d4a75baf61062ee20053d70a9759b35fa96a9ca75",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "application": {
+    "seconds": 21.472645833333335,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8751282691955566,
+    "rms": 0.1539499171226392,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "application.mp3.mp3",
+    "sha256": "31e732831bb44075d8d61b10600384dc0f4f62ff98cd3af2b37ea43278cc02a0",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "complete": {
+    "seconds": 6.034270833333333,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8065558075904846,
+    "rms": 0.14654308708504737,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "complete.mp3.mp3",
+    "sha256": "7a3c521583331fa98efcdf0842217a99b56745950d47d230175d38b24ebb328a",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-0": {
+    "seconds": 5.485708333333333,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8865100741386414,
+    "rms": 0.14308076103839662,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-0.mp3.mp3",
+    "sha256": "1bd55136375779a5bf7a79b04a476fcd9c2aa59411925ae40dc1a405de3625c3",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-1": {
+    "seconds": 4.754270833333333,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8201460838317871,
+    "rms": 0.15985188450191118,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-1.mp3.mp3",
+    "sha256": "8d22216ff5921d24a471baa73d748596e1cde27ca4185433deb6fa411fca5dbb",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-2": {
+    "seconds": 5.407333333333334,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8309307098388672,
+    "rms": 0.17403949648144365,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-2.mp3.mp3",
+    "sha256": "be25850d50aebde047da1c889e2db3a7939d9228e507c74f44cb0f916300e31b",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-3": {
+    "seconds": 5.799166666666666,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8281681537628174,
+    "rms": 0.16544350416463469,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-3.mp3.mp3",
+    "sha256": "c965ca60cfee4ebb73fd3ef9e6df6306560a11fce7d2caa8e8b8b74ca31bc3f5",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-4": {
+    "seconds": 5.7208125,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.9104020595550537,
+    "rms": 0.1566907079666017,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-4.mp3.mp3",
+    "sha256": "b621dee197a9d32bf08868c70651b5e9a15a5362a2b1727cdeaf91b4b7d60f22",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-5": {
+    "seconds": 5.06775,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8451956510543823,
+    "rms": 0.17035349506913258,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-5.mp3.mp3",
+    "sha256": "0436accae9aef86b26f461896649f250fddd41dee2ea92ce6f2f2ea3ea463d67",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-6": {
+    "seconds": 4.754270833333333,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8161829710006714,
+    "rms": 0.15775091199083127,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-6.mp3.mp3",
+    "sha256": "de7a52e97dbcbd3ada2df6e6345c66bae699bc16bee73e85d9bc9911a446ac91",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-7": {
+    "seconds": 4.4408125,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.7445611953735352,
+    "rms": 0.16267998821732096,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-7.mp3.mp3",
+    "sha256": "f580c66da42508c7bf18e240c50c8f086e19e23dbf833df58e6f09a3093002cb",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-8": {
+    "seconds": 4.911,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.7853193283081055,
+    "rms": 0.170484100556652,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-8.mp3.mp3",
+    "sha256": "f85fdfe80cb88474969e304797e90e2168cf569899adf8e3f7fe5ad5584c9594",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-9": {
+    "seconds": 6.034270833333333,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.783362627029419,
+    "rms": 0.16545874850379813,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-9.mp3.mp3",
+    "sha256": "488c031590b016fa663ad3e0fe4063a2d4fd4ecb1142c7f32883b7fc67616662",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  },
+  "tour-10": {
+    "seconds": 5.328979166666667,
+    "sampleRate": 48000,
+    "channels": 1,
+    "peak": 0.8564697504043579,
+    "rms": 0.15703467636744928,
+    "voice": "ElevenLabs; archivo aportado por el usuario",
+    "sourceName": "tour-10.mp3.mp3",
+    "sha256": "7a155ba891714ea36521e6b5949fdc73d6c34aa84a8a52356ee81de948016c0d",
+    "subtitleMode": "Bloque completo durante el audio; sin alineación palabra por palabra"
+  }
+}
